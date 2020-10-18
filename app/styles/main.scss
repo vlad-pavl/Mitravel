@@ -1,0 +1,18 @@
+// VENDORS
+@import "vendors/normalize";
+@import "vendors/swiper";
+// @import "vendors/bootstrap";
+
+// UTILS
+@import "utils/variables";
+@import "utils/mixins";
+
+// BASE
+@import "base/base";
+@import "base/fonts";
+
+// COMPONENTS
+
+// MODULES
+@import "../blocks/components/components";
+@import "../blocks/modules/modules";

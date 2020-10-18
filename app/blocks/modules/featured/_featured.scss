@@ -1,0 +1,114 @@
+.featured {
+  position: relative;
+  height: 1080px;
+  background-image: url("../img/featured/featured-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  &__stories {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    padding: 126px 133px;
+    background-color: rgba(60, 74, 81, 0.9);
+  }
+
+  &__title {
+    margin-bottom: 64px;
+    color: $white;
+    font-size: 64px;
+    line-height: 80px;
+  }
+}
+
+.blog-article {
+  padding-bottom: 105px;
+
+  &__category {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    color: $white;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: $accent;
+    border-radius: 100px;
+  }
+
+  &__title {
+    max-width: 40%;
+    margin-bottom: 18px;
+    color: $white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  &__descr {
+    max-width: 40%;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 14px;
+    font-family: SFCompactText, sans-serif;
+    line-height: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    background-color: $neptune;
+  }
+}
+
+.featured-list {
+  &__item:last-child .featured-list__article {
+    border: transparent;
+  }
+
+  &__article {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.502293);
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 32px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  &__title {
+    max-width: 288px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    a {
+      color: #ffff;
+    }
+  }
+
+  &__time {
+    color: rgba(255, 255, 255, 0.502293);
+    font-size: 11px;
+    font-family: SFProText, sans-serif;
+    line-height: 13px;
+  }
+}

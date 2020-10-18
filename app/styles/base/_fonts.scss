@@ -1,0 +1,18 @@
+// 100 - Extra Light or Ultra Light
+// 200 - Light or Thin
+// 300 - Book or Demi
+// 400 - Regular or Normal
+// 500 - Medium
+// 600 - Semibold or Demibold
+// 700 - Bold
+// 800 - Black or Extra Bold or Heavy
+// 900 - Extra Black or Fat or Ultra Blac
+@include font("HelveticaNeue", normal, 700, "../fonts/HelveticaNeue-Bold.woff2");
+@include font("SFCompactText", normal, 200, "../fonts/SFCompactText-Light.woff2");
+@include font("SFCompactText", normal, 400, "../fonts/SFCompactText-Regular.woff2");
+@include font("SFProDisplay", normal, 700, "../fonts/SFProDisplay-Bold.woff2");
+@include font("SFProDisplay", normal, 800, "../fonts/SFProDisplay-Heavy.woff2");
+@include font("SFProDisplay", normal, 500, "../fonts/SFProDisplay-Medium.woff2");
+@include font("SFProDisplay", normal, 400, "../fonts/SFProDisplay-Regular.woff2");
+@include font("SFProDisplay", normal, 600, "../fonts/SFProDisplay-Semibold.woff2");
+@include font("SFProText", normal, 400, "../fonts/SFProTextRegular.woff2");

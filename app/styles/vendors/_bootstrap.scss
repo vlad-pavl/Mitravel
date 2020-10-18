@@ -1,0 +1,34 @@
+// @import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+// @import "node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid
+// @import "node_modules/bootstrap/scss/utilities/_sizing.scss"; // Optional Bootstrap Utilites
+// @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
+
+// Example: +media-breakpoints-down(xs) - ≥576px / +media-breakpoints-up(sm) - ≤576px
+
+// ==========  Desktop First  ==========
+
+// ≥576px
+// @include media-breakpoint-down(sm)
+
+// ≥768px
+// @include media-breakpoint-down(md)
+
+// ≥992px
+// @include media-breakpoint-down(lg)
+
+// ≥1200px
+// @include media-breakpoint-down(xl)
+
+// ==========  Mobile First  ==========
+
+// ≤576px
+// +media-breakpoint-up(sm)
+
+// ≤768px
+// +media-breakpoint-up(md)
+
+// ≤992px
+// +media-breakpoint-up(lg)
+
+// ≤1200px
+// +media-breakpoint-up(xl)

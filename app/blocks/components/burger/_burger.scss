@@ -1,0 +1,24 @@
+.burger {
+  position: relative;
+  width: 48px;
+  height: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.burger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $white;
+
+  &:last-child {
+    top: auto;
+    bottom: 0;
+  }
+}
