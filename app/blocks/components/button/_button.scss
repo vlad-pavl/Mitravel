@@ -11,6 +11,6 @@
   transition: 0.25s;
 
   &:hover {
-    opacity: 0.9;
+    background-color: darken($neptune, 10%);
   }
 }

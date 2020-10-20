@@ -46,6 +46,11 @@
     text-align: center;
     background-color: $accent;
     border-radius: 100px;
+    transition: 0.25s;
+
+    &:hover {
+      background: darken($accent, 10%);
+    }
   }
 
   &__title {
@@ -102,6 +107,11 @@
 
     a {
       color: #ffff;
+      transition: 0.25s;
+    }
+
+    a:hover {
+      color: #ccc;
     }
   }
 
