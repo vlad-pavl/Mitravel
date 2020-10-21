@@ -30,7 +30,7 @@ let patch = {
    },
 
    scripts: {
-      src: baseDir + '/js/index.js',
+      src:  baseDir + '/js/index.js',
       dest: './dist/js',
       watch: [
          baseDir + '/blocks/**/*.js',
@@ -42,6 +42,12 @@ let patch = {
       src: baseDir + '/img/**/*',
       dest: './dist/img/',
       watch: baseDir + '/img/**/*'
+   },
+
+   videos: {
+      src: baseDir + '/videos/**/*',
+      dest: './dist/videos/',
+      watch: baseDir + '/videos/**/*'
    },
 
    sprites: {
@@ -94,6 +100,7 @@ function server() {
    watch(patch.styles.watch, { usePolling: true }, styles);
    watch(patch.scripts.watch, { usePolling: true }, scripts);
    watch(patch.images.watch, { usePolling: true }, images);
+   watch(patch.videos.watch, { usePolling: true }, videos);
    watch(patch.sprites.watch, { usePolling: true }, sprites);
    watch(patch.fonts.watch, { usePolling: true }, fonts);
 }
@@ -144,6 +151,11 @@ function images() {
    .pipe(dest(patch.images.dest))
 }
 
+function videos() {
+   return src(patch.videos.src)
+   .pipe(dest(patch.videos.dest))
+}
+
 function delFolderSvg() {
    return del('./dist/img/svg', { force: true })
 }
@@ -180,5 +192,5 @@ exports.images    = images;
 exports.sprites   = sprites;
 exports.fonts     = fonts;
 exports.cleanDist = cleanDist;
-exports.prod      = series(cleanDist, parallel(html, styles, scripts, images, delFolderSvg, sprites, fonts), delFolderSvg);
-exports.default   = series(cleanDist, parallel(html, styles, scripts, images, sprites, fonts), delFolderSvg, parallel(server));
+exports.prod      = series(cleanDist, parallel(html, styles, scripts, images, videos, delFolderSvg, sprites, fonts), delFolderSvg);
+exports.default   = series(cleanDist, parallel(html, styles, scripts, images, videos, sprites, fonts), delFolderSvg, parallel(server));

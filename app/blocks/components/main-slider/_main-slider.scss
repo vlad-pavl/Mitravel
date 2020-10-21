@@ -1,11 +1,16 @@
 .main-slider {
   position: relative;
   overflow: hidden;
-  font-size: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
+  &__media {
+    position: relative;
+    max-height: 250px;
+  }
+
   &__text {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +34,7 @@
 
   &__btn {
     position: absolute;
-    bottom: 33px;
+    bottom: 15%;
     left: 50px;
     z-index: 50;
     width: 14px;
@@ -44,14 +49,44 @@
     outline: transparent;
     cursor: pointer;
 
-    &_left {
-      background-image: url("../img/main-slider/arrow-left.svg");
+    @media (max-height: 900px) {
+      bottom: 10%;
     }
 
-    &_right {
-      right: 50px;
-      left: auto;
-      background-image: url("../img/main-slider/arrow-right.svg");
+    @media (max-height: 730px) {
+      bottom: 5%;
     }
+  }
+
+  &__btn_left {
+    background-image: url("../img/main-slider/arrow-left.svg");
+  }
+
+  &__btn_right {
+    right: 50px;
+    left: auto;
+    background-image: url("../img/main-slider/arrow-right.svg");
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .main-slider__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 55;
+    width: 32px;
+    height: 41px;
+    background: url("../img/main-slider/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    outline: transparent;
+    transform: translate(-50%, -50%);
   }
 }
