@@ -6,11 +6,15 @@
   overflow: hidden;
   border-top-left-radius: 4px;
 
-  @media (max-height: 900px) {
+  @media (max-width: 1150px) {
+    height: 90px;
+  }
+
+  @media (max-height: 850px) {
     height: 80px;
   }
 
-  @media (max-height: 730px) {
+  @media (max-height: 670px) {
     height: 50px;
   }
 

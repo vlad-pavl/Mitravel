@@ -1,6 +1,10 @@
 .featured-videos {
   padding-top: 150px;
 
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
+
   &__title {
     margin-bottom: 24px;
   }

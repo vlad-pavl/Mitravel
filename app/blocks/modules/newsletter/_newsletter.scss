@@ -2,20 +2,33 @@
   padding-top: 100px;
   padding-bottom: 150px;
 
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 179px;
+  }
+
   &__content {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 338px $newsletter-gap 170px;
+    padding: 338px 133px 170px;
     background: url("../img/newsletter/newsletter-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 1200px) {
+      padding: 338px 30px 170px;
+    }
   }
 
   .newsletter__text {
     max-width: 370px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 170px;
+    }
   }
 
   .newsletter__title {
@@ -33,7 +46,12 @@
 
   .newsletter__form {
     position: absolute;
-    right: $newsletter-gap;
+    right: 133px;
     bottom: -96px;
+
+    @media (max-width: 1200px) {
+      right: 30px;
+      bottom: -31px;
+    }
   }
 }

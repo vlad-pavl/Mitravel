@@ -1,9 +1,14 @@
 .slider-container {
   width: 100%;
   max-height: 869px;
+  margin: 0 auto;
   margin-top: 25px;
   padding: 100px 0;
   overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 
   .swiper-slide {
     position: relative;
@@ -17,6 +22,16 @@
     background-size: cover;
     border-radius: 8px;
     transition: transform 0.3s;
+
+    @media (max-width: 1200px) {
+      width: 700px;
+      min-height: 500px;
+    }
+
+    @media (max-width: 768px) {
+      width: 500px;
+      min-height: 350px;
+    }
 
     &::after {
       position: absolute;
@@ -76,6 +91,10 @@
     line-height: 40px;
     opacity: 0;
     transition: opacity 0.25s;
+
+    @media (max-width: 768px) {
+      padding: 0 0 22px 27px;
+    }
   }
 
   .slide-play {
@@ -91,5 +110,12 @@
     outline: transparent;
     opacity: 0;
     transition: opacity 0.25s;
+
+    @media (max-width: 768px) {
+      top: 25px;
+      left: 33px;
+      width: 90px;
+      height: 90px;
+    }
   }
 }

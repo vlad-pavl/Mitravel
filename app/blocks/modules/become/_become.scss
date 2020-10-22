@@ -2,9 +2,21 @@
   padding: 150px 0;
   background-color: #ffffff;
 
+  @media (max-width: 768px) {
+    padding: 100px 0;
+  }
+
   &__title {
     max-width: 50%;
     margin-bottom: 99px;
+
+    @media (max-width: 1200px) {
+      max-width: 75%;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 79px;
+    }
   }
 
   &__list {
@@ -20,6 +32,11 @@
     overflow: hidden;
     font-size: 0;
     border-radius: 4px;
+
+    @media (max-width: 992px) {
+      width: 48%;
+      margin-right: 4%;
+    }
 
     &::before {
       position: absolute;
@@ -41,7 +58,13 @@
       transform: translateY(0px);
     }
 
-    &:nth-child(4n) {
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  &__item:nth-child(2n) {
+    @media (max-width: 991px) {
       margin-right: 0;
     }
   }
@@ -64,5 +87,10 @@
     line-height: 31px;
     transform: translateY(300px);
     transition: transform 0.3s ease-in-out;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 30px;
+      padding-left: 20px;
+    }
   }
 }

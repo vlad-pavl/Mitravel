@@ -8,6 +8,11 @@
   background-color: #fff;
   border-radius: 8px;
 
+  @media (max-width: 1200px) {
+    width: 400px;
+    height: 350px;
+  }
+
   &__field {
     width: calc(100% - (72px * 2));
     padding: 25px 0;
