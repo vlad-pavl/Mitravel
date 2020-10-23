@@ -5,8 +5,20 @@
     padding-top: 100px;
   }
 
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 376px) {
+    padding-top: 30px;
+  }
+
   &__title {
     margin-bottom: 24px;
+
+    @media (max-width: 376px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__descr {

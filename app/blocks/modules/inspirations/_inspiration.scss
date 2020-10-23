@@ -5,6 +5,10 @@
 .inspiration {
   &__title {
     margin-bottom: 24px;
+
+    @media (max-width: 376px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__descr {
@@ -19,25 +23,39 @@
     @media (max-width: 768px) {
       margin-bottom: 50px;
     }
+
+    @media (max-width: 376px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(550px, auto);
     grid-gap: 32px;
     grid-template-columns: repeat(3, 1fr);
 
     @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 576px) {
+      grid-auto-rows: minmax(400px, auto);
       grid-gap: 25px;
+    }
+
+    @media (max-width: 376px) {
+      grid-gap: 15px;
     }
   }
 
   &__item {
     position: relative;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border-radius: 8px;
+
+    @media (max-width: 576px) {
+      height: auto;
+    }
 
     &::after {
       position: absolute;
@@ -92,6 +110,18 @@
     }
   }
 
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__item_big {
+    @media (max-width: 376px) {
+      grid-column-end: 2;
+    }
+  }
+
   &__text {
     position: absolute;
     bottom: 0;
@@ -101,6 +131,10 @@
 
     @media (max-width: 768px) {
       padding: 0 20px 35px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 15px 20px;
     }
   }
 
@@ -119,6 +153,10 @@
     color: $white;
     font-weight: 700;
     font-size: 32px;
+
+    @media (max-width: 376px) {
+      font-size: 20px;
+    }
   }
 
   &__people {
@@ -138,6 +176,13 @@
     }
   }
 
+  &__people-item {
+    @media (max-width: 376px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   &__play {
     position: absolute;
     top: 40px;
@@ -148,5 +193,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 768px) {
+      top: 20px;
+      left: 20px;
+    }
   }
 }

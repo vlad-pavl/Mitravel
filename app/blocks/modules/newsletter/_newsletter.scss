@@ -7,6 +7,16 @@
     padding-bottom: 179px;
   }
 
+  @media (max-width: 576px) {
+    padding-top: 40px;
+    padding-bottom: 129px;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+
   &__content {
     position: relative;
     display: flex;
@@ -21,12 +31,17 @@
     @media (max-width: 1200px) {
       padding: 338px 30px 170px;
     }
+
+    @media (max-width: 576px) {
+      padding-top: 50px;
+      padding-bottom: 200px;
+    }
   }
 
   .newsletter__text {
     max-width: 370px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 868px) {
       padding-bottom: 170px;
     }
   }
@@ -52,6 +67,12 @@
     @media (max-width: 1200px) {
       right: 30px;
       bottom: -31px;
+    }
+
+    @media (max-width: 576px) {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

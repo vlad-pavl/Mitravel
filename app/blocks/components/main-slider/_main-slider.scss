@@ -4,6 +4,14 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+  &__container {
+    width: 100%;
+  }
+
   &__media {
     position: relative;
     max-height: 250px;
@@ -22,14 +30,6 @@
     letter-spacing: 2.2px;
     text-transform: uppercase;
     background-color: $neptune;
-
-    @media (max-height: 850px) {
-      height: 80px;
-    }
-
-    @media (max-height: 670px) {
-      height: 50px;
-    }
 
     @media (max-width: 1150px) {
       height: 90px;
@@ -57,21 +57,17 @@
     outline: transparent;
     cursor: pointer;
 
-    @media (max-height: 850px) {
-      bottom: 12%;
-    }
-
-    @media (max-height: 670px) {
-      bottom: 8%;
-    }
-
     @media (max-width: 768px) {
-      bottom: 18%;
+      bottom: 40px;
     }
   }
 
   &__btn_left {
     background-image: url("../img/main-slider/arrow-left.svg");
+
+    @media (max-width: 1150px) {
+      left: 25px;
+    }
 
     @media (max-width: 768px) {
       left: 20px;
@@ -90,13 +86,6 @@
     @media (max-width: 768px) {
       right: 20px;
     }
-  }
-
-  video {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   img {

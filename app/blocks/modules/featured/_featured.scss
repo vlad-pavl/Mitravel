@@ -30,7 +30,16 @@
     }
 
     @media (max-width: 768px) {
-      padding: 70px 40px;
+      position: static;
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      padding: 40px 40px;
+    }
+
+    @media (max-width: 376px) {
+      padding: 30px 30px;
     }
   }
 
@@ -51,68 +60,16 @@
     @media (max-width: 768px) {
       line-height: 54px;
     }
-  }
-}
 
-.blog-article {
-  padding-top: 615px;
-  padding-bottom: 105px;
-
-  @media (max-width: 768px) {
-    padding-top: 315px;
-    padding-bottom: 50px;
-  }
-
-  &__category {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 15px 30px;
-    color: $white;
-    font-weight: 800;
-    font-size: 11px;
-    line-height: 13px;
-    letter-spacing: 2px;
-    text-align: center;
-    background-color: $accent;
-    border-radius: 100px;
-    transition: 0.25s;
-
-    &:hover {
-      background: darken($accent, 10%);
+    @media (max-width: 576px) {
+      margin-bottom: 24px;
     }
-  }
 
-  &__title {
-    max-width: 40%;
-    margin-bottom: 18px;
-    color: $white;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
-
-    @media (max-width: 768px) {
-      max-width: 50%;
-      line-height: 54px;
+    @media (max-width: 376px) {
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
     }
-  }
-
-  &__descr {
-    max-width: 40%;
-    margin-bottom: 40px;
-    color: #ffffff;
-    font-weight: 200;
-    font-size: 14px;
-    font-family: SFCompactText, sans-serif;
-    line-height: 16px;
-
-    @media (max-width: 768px) {
-      max-width: 50%;
-    }
-  }
-
-  &__link {
-    display: inline-block;
-    background-color: $neptune;
   }
 }
 

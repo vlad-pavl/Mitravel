@@ -10,5 +10,13 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 55px;
+
+    @media (max-width: 768px) {
+      padding-top: 35px;
+    }
+
+    @media (max-width: 568px) {
+      padding-top: 25px;
+    }
   }
 }
